@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Dal's Web</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width =device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,600;1,100;1,300;1,400;1,600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section id="banner">
+        <img src="moon.png" alt="logo" class="logo">
+        <div  class="banner-text">
+            <h1>I'm Nur Darlisa</h1>
+            <p>and this is my official portfolio website to show all details for future employement</p>
+            <div class="banner-btn">
+                <a href="#feature"><span></span>Find Out more</a>
+                
+            </div>
+        </div>
+</section>
+<div id="SideNav">
+    <nav>
+        <ul>
+            <li><a href="#banner">HOME</a></li>
+            <li><a href="#feature">ABOUT ME</a></li>
+            <li><a href="#Interest">INTEREST</a></li>
+            <li><a href="#academics">ACADEMICS</a></li>
+            <li><a href="#contact">CONTACT ME</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="menu-icon-19353-Windows.ico" alt="menu" id="menu">
+</div>
+
+<!--features-->
+<section id="feature">
+    <div class="title-text">
+        <p>ABOUT ME</p>
+        <h1>Hi, I am Nur Darlisa here's why you might find your future employee</h1>
+    </div>
+    <div class="feature-box">
+        <div class="features">
+            <h1>Graduated Pre-University</h1>
+            <div class="feature-desc">
+                <div class="feature-icon"></div>
+                <div class="feature-text">
+                    <p>Born on June 15th,2002. Place of Origin is Mukah,Sarawak. Received early education at Tadika Kemas Kampung Sungai Alo,Mukah. Graduated from Sk Kampung Seberang for Elementary School, and received 5A in UPSR. Graduated Highschool, which was SMK Three Rivers,Mukah. Graduated on April 2022 from Pre-University at SMK Three Rivers,Mukah and currently studying at Universiti Teknologi Mara in Bachelor Of Information Science
+                        (Hons) Information System Management.</p>
+                        <div class="feature-btn">
+                            <a href="https://kppim.uitm.edu.my/component/content/article/25-im245/2-bachelor-of-information-science-hons-information-systems-management-im245"><span></span>Find out more</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="features-img">
+            <img src="passport.jpg" alt="pictures">
+        </div>
+    </div>
+
+</section>
+<!---Academics-->
+
+<section id="academics">
+    <div class="title-text">
+        <p>Academics</p>
+        <h1>Here's my academics achievements</h1>
+    </div>
+    <div class="academics-box">
+        <div class="single-academics">
+            <img src="muet.jpg.jpg" alt="muet">
+        </div>
+        <div class="single-academics">
+            <img src="stpm.jpg" alt="stpm">
+        </div>
+        <div class="academics-btn">
+            <a href="#"><span></span>Read More</a>
+        </div>
+    </div>
+        
+</section>
+<!--Interests-->
+
+<section id="Interest">
+    <div class="title-text">
+        <p>Interest</p>
+        <h1>Here's what I find interesting</h1>
+    </div>
+    <div class="interest-box">
+        <div class="interest">
+            <h1>Martial Arts</h1>
+            <div class="interest-desc">
+                <div class="interest-icon"></div>
+                <div class="interest-box">
+                    <p>Started practicing Martial Arts since 2016 and are acknowledged as Instructor Assistant</p>
+                        <div class="interest-btn">
+                            <a href="https://www.facebook.com/awangdaudmartialartacademy/"><span></span>Find out more</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="features-img">
+            <img src="silat1.jpeg" alt="pictures">
+        </div>
+    </div>
+
+
+    
+        
+    
+
+</section>
+
+<section id="contact">
+    <div class="contact"> 
+        <form class="row g-3" action="https://formsubmit.co/a3d7dadf73e038c33ab34ea56de4ecfe" method="POST">
+            <h1>Contact Me</h1>
+        <input type="text" id="firstName" name="Name" placeholder="First Name" required>
+        <input type="text" id="lastName" name="Last Name" placeholder="Last Name" required>
+        <input type="email" id="email" name="Email" placeholder="Email" required>
+        <input type="text" id="mobile" name="mobile" placeholder="mobile" required>
+        <h4>Type Your Message Here...</h4>
+        <textarea class="form-control" id="comments" name="comments,questions" rows="3" required></textarea>
+        <input type="submit" value="send" id="button">
+        </form>
+
+    </div>
+</section>
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var SideNav = document.getElementById("SideNav")
+    var menu = document.getElementById("menu")
+
+    SideNav.style.right = "-250px"
+
+    menuBtn.onclick = function(){
+        if(SideNav.style.right == "-250px"){
+            SideNav.style.right = "0";
+            menu.src = "pictures/close-icon-13588-windows.ico";
+        }
+        else{
+            SideNav.style.right = "-250px"
+            menu.src = "pictures/menu-icon-19353-Windows.ico";
+        }
+    }
+</script>
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href="https://instagram.com/nurdarlisadee?igshid=ZDc4ODBmNjlmNQ=="><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/raylisa06?t=-VlooLG21miPfh0tptezvg&s=35"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.tiktok.com/@nurdarlisadan?_t=8dqCjxl8jeE&_r=1"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div></div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#feature">About</a></li>
+                <li><a href="#academics">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2023; designed by <span class="designer">Darlisa</span></p>
+        </div>
+
+</footer>
+         
+    </body>
+</html>
