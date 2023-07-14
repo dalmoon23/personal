@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
     font-family: 'Josefin Sans', sans-serif; ;
 }
 #banner{ 
@@ -294,10 +295,101 @@ nav ul li a{
 .interest-btn a:hover span{
     width: 100%;
 }
+
+#skills{
+    width: 100%;
+    padding: 70px 0;
+    background: #caa5ec;
+}
+
+h3{
+    margin: 5px;
+}
+
+.skill{
+    width: 500px;
+    margin: 60px auto;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.22);
+}
+
+.skill li{
+    margin: 20px 0;
+    padding: 10px;
+}
+.bar{
+    background: #7e5e95;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.24);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 1px 3px rgba(0, 0, 0, 0.22);
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
+}
+
+.html{
+    width: 70%;
+    animation: html 3s;
+}
+.css{
+    width: 85%;
+    animation: css 3s;
+}
+.Words{
+    width: 90%;
+    animation: Words 3s;
+}
+.capcut{
+    width: 75%;
+    animation: capcut 3s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+@keyframes Words{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes capcut{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
 #contact{
     min-height: 100vh;
     padding: 70px 0;
-    background:linear-gradient(rgba(0,0,0,0.5),#7e5e95),url(pictures/themoon.jpg);
+    background:linear-gradient(rgba(0,0,0,0.5),#7e5e95),url(themoon.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -473,3 +565,5 @@ footer{
     font-weight: 400;
     margin: 0px 5px;
 }
+
+    
